@@ -1,4 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
   margin-top: 10%;
@@ -24,3 +26,4 @@ h2 {
 a:hover {
   opacity: 0.8;
 }
+/* You can add global styles to this file, and also import other style files */
