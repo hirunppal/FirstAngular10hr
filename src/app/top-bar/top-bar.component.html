@@ -1,18 +1,24 @@
 <a [routerLink]="['/']">
-  <div class="bg-blue ml-20">
+  <div class="bg-violet-200 ml-20">
     <h1>two way binding</h1>
     <input class="border-2" type="text" (input)="handleOnInput($event)" />
     <button>Click clear:{{ myInput }}</button>
   </div>
-  <div class="bg-blue ml-20 my-8">
+  <div class="bg-violet-200 ml-20 my-8">
     <h1>by Form module.ngmodule</h1>
     <input [(ngModel)]="newInput" class="border-2" />
     <button>Click clear:{{ newInput }}</button>
   </div>
   <div>
     <h1>My Store</h1>
-    <button [disabled]="isDisable">hi</button>
-    <button (click)="handleOnclick()">Onclick able</button>
+    <button [disabled]="isDisable" class="btn-main">hi</button>
+    <button (click)="handleOnclick()" class="btn-main">Onclick able</button>
+    <!-- <div *ngIf="1"> -->
+    <div *ngIf="isArremp()">
+      <div *ngFor="let block of isAnyBlock; let i = index">
+        <div class="block">{{ i }}</div>
+      </div>
+    </div>
   </div>
 </a>
 <a [routerLink]="['/cart']" class="button fancy=button">

@@ -7,3 +7,9 @@ div {
   width: 100%;
   gap: 20px;
 }
+.btn-main {
+  @apply bg-gray-300 hover:bg-slate-400 hover:text-gray-100 hover:text-base transition duration-200 rounded-lg min-w-max w-40;
+}
+.block {
+  @apply bg-black w-20 h-20 absolute;
+}

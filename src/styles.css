@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @layer components {
+  .btnComp {
+    @apply bg-blue ml-20 my-8;
+  }
+} */
+
 body {
   margin: 0;
   margin-top: 10%;
